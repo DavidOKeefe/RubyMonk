@@ -13,7 +13,7 @@ class MyArray
     if block_given?
     	@array.inject(initial_value) { |sum, number| sum += yield(number) }
     else
-        @array.inject(initial_value) { |sum, number| sum += number }
+      @array.inject(initial_value) { |sum, number| sum += number }
     end
   end
 end
